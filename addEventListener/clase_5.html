@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos en HTML</title>
+</head>
+<body>
+    <h1 class="green">Eventos en HTML</h1>
+
+    <form action="">
+        <input type="text" placeholder="dato 1" id="input-1">
+        <input type="text" placeholder="dato 2" id="input-2" onchange="console.log('algo cambio')">
+        <!-- la funcion onchange nos ejecuta una acción cuando algo sucede en ese elemento, que no tiene por qué ser un click sino un cambio de texto por ejemplo -->
+        <button type="button" id="button">Calcular</button>
+        <!-- onclick="calculateOnClick() la sustituimos por el addEventListener para que todo el evento se origine dede Javascript -->
+        <!-- si no le colocamos al button type="button", este sera de tipo submit, y nos recargará la página sin que veamos el resultado en pantalla, ya que form asume que al clickear el boton nos redirigiremos a otra parte, es decir a una base de datos, etc -->
+        <p id="result"></p>
+    </form>
+    <script src="./clase_5.js"></script>
+</body>
+</html>
